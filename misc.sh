@@ -40,7 +40,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# for unity development on ubuntu
-export DOTNET_ROOT="$HOME/.dotnet"
-export PATH="$DOTNET_ROOT:$PATH"
