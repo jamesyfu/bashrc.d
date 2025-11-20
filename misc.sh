@@ -1,9 +1,12 @@
-# colored prompt
+# colored prompt using kamigawa wave theme
 red=$(tput setaf 1)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
 blue=$(tput setaf 4)
+purple=$(tput setaf 5)
 cyan=$(tput setaf 6)
 reset=$(tput sgr0)
-PS1='\[$blue\]\W \[$cyan\]$(__git_ps1 " (%s)")\n\[$red\]\$\[$reset\] '
+PS1='\[$red\]\u:\[$blue\]\w \[$cyan\]$(__git_ps1 " (%s)")\n\[$purple\]\$\[$reset\] '
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
